@@ -1,28 +1,38 @@
-# 1. Print your name, age, and city on 3 separate lines.
-# 2. Store your name in a variable and print:
-# Hello, [your name]!
-# 3. Store two numbers, add them, and print the result.
-# 4. A shirt costs 500 PKR. You're buying 3. Print the total cost.
-# 5. Store your birth year. Calculate and print your age.
-# 1
-print("Hamza")
-print("21")
-print("Lahore")
-# 2
-name = "Hamza"
-print(f"Hello, {name}")
-# 3
-a = 2
-b = 4
+# 6. Ask the user for their name, then print Hello, [name]! Welcome.
+# 7. Ask for two numbers and print their sum, difference, product, and division.
+# 8. Ask for a temperature in Celsius, convert it to Fahrenheit, print the result.
+
+# Formula: F = (C × 9/5) + 32
+
+# 9. Ask for someone's birth year, print how old they are.
+# 10. Ask for a price and a discount percentage, print the final price after discount.
+# 6
+userName = input("State your name here:")
+print(f"Hello, {userName}! Welcome.")
+# 7
+a = int(input("Enter a number:"))
+b = int(input("Enter a again number:"))
 sum = a + b
-print(f"The sum of {a} and {b} is {sum}")
-# 4
-shirt = 500
-quantity = 3
-total = shirt * quantity
-print(f"{total} is your total")
-# 5
-my_age = int(input("Enter your birth year: "))
+product = a * b
+difference = a - b
+division = a / b
+print(f"sum of following numbers is {sum}")
+print(f"product of following numbers is {product}")
+print(f"difference of following numbers is {difference}")
+print(f"division of following numbers is {division}")
+# 8
+TemperatureInCelsius = int(input('Enter Temperature:'))
+InFahrenheit = (TemperatureInCelsius * 9/5) + 32
+print(f"Temperature in Fahrenheit is {InFahrenheit}'F.")
+# 9
+userAge = int(input("Enter your birth year: "))
 current_year = 2026
-yearsOld = current_year - my_age
-print(f"You're {yearsOld}!")
+outputAge = current_year - userAge
+print(f"You're {outputAge}!")
+# 10
+ogPrice = int(input("Price of watch: "))
+discountPer = int(input("Discount Percentage: "))
+discountPrice = (discountPer/100) * ogPrice
+finalPrice = ogPrice - discountPrice 
+print(finalPrice)
+
