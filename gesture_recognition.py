@@ -1,5 +1,5 @@
-rows = 6
-for i in range(0,rows):
-    for j in range(0, i + 1):
-        print('\r', end="*")
-    print("*")
+name = input("Enter your name: ")
+age = int(input("Enter your Age: "))
+city = input("Enter your City: ")
+lang = input("Enter your Favorite Language: ")
+print(f'Name: {name} \nAge: {age} \nCity: {city}\nFavorite Language: {lang}')
