@@ -1,5 +1,9 @@
-name = input("Enter your name: ")
-age = int(input("Enter your Age: "))
-city = input("Enter your City: ")
-lang = input("Enter your Favorite Language: ")
-print(f'Name: {name} \nAge: {age} \nCity: {city}\nFavorite Language: {lang}')
+username = input("Username: ")
+password = input("Enter Password: ")
+if username == "admin" :
+    if password == "1234":
+        print('Login Successful')
+    else:
+        print('Invalid Password')
+else:    
+    print('Invalid password!')
