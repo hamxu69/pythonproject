@@ -1,9 +1,6 @@
-username = input("Username: ")
-password = input("Enter Password: ")
-if username == "admin" :
-    if password == "1234":
-        print('Login Successful')
-    else:
-        print('Invalid Password')
-else:    
-    print('Invalid password!')
+def multiply(a, b):
+    return a * b
+
+print(multiply(2, 4))
+print(multiply(3, 5))
+#answer is 1. 8 2. 15
