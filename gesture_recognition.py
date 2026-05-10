@@ -1,6 +1,3 @@
-def multiply(a, b):
-    return a * b
-
-print(multiply(2, 4))
-print(multiply(3, 5))
-#answer is 1. 8 2. 15
+numbers = [1,2,3,4,5]
+newarr = [num * 2 for num in numbers]
+print(newarr)
