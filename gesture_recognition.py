@@ -8,7 +8,10 @@ while True:
     name = input("Enter your name: ")
     if name == 'exit':
         for i in students:
-            print(f"name: {i["name"]}")
+            print(f"""
+                  name: {i["name"]}
+                  marks: {i["marks"]}
+                  grade: {i["grade"]}""")
         break
     marks = int(input("Enter your marks: "))
     grade = ''
