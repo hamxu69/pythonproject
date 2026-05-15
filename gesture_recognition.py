@@ -1,41 +1,48 @@
 students = []
-student = {
-    "name": "",
-    "marks": "",
-    "grade": ""
-}
+
 while True:
-    name = input("Enter your name: ")
-    if name == 'exit':
-        for i in students:
-            print(f"""
-                  name: {i["name"]}
-                  marks: {i["marks"]}
-                  grade: {i["grade"]}""")
+    options = input("""1. Add Student
+2. Search Student
+3. Show All Students
+4. Exit
+                    """)
+    if options == "4":
+        print("Program Ended")
         break
-    marks = int(input("Enter your marks: "))
-    grade = ''
+    if options == "2":
+        search_name = input("Enter student name:").title()
+        for i in students:
+            if search_name == {i[name]}:
+                            print(f"""
+Name: {i[name]}
+Marks: {i[marks]}
+Grade: {i[grade]}
+""")
+            else: 
+                print("Student doesn't exists")
+    if options == "3":
+        if len(students) != 0:
+            for i in students:
+                            print(f"""
+Name: {i[name]}
+Marks: {i[marks]}
+Grade: {i[grade]}
+""")
+        else:
+            print("Student data doesn't exist")        
+    name = input("Enter your name:")
+    marks = int(input("Enter your marks:"))
     if marks >= 90:
         grade = "A"
-        student["name"] = name.title()
-        student["marks"] = marks
-        student["grade"] = grade
-        
-    elif marks >= 70:
+    if marks > 70:  
         grade = "B"
-        student["name"] = name.title()
-        student["marks"] = marks
-        student["grade"] = grade
-        
-    elif marks >= 50:
+    if marks >= 60:  
         grade = "C"
-        student["name"] = name.title()
-        student["marks"] = marks
-        student["grade"] = grade
-        
-    elif marks < 50:
+    if marks < 50:  
         grade = "F"
-        student["name"] = name.title()
-        student["marks"] = marks
-        student["grade"] = grade
-    students.append(student)
+    student = {
+        "name": name.title(),
+        "marks": marks,
+        "grade": grade
+    }
+    students.append(students)
