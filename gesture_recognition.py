@@ -12,21 +12,21 @@ while True:
     if options == "2":
         search_name = input("Enter student name:").title()
         for i in students:
-            if search_name == {i[name]}:
-                            print(f"""
-Name: {i[name]}
-Marks: {i[marks]}
-Grade: {i[grade]}
+            if search_name == i["name"]:
+                print(f"""
+Name: {i["name"]}
+Marks: {i["marks"]}
+Grade: {i["grade"]}
 """)
             else: 
                 print("Student doesn't exists")
     if options == "3":
         if len(students) != 0:
             for i in students:
-                            print(f"""
-Name: {i[name]}
-Marks: {i[marks]}
-Grade: {i[grade]}
+                print(f"""
+Name: {i["name"]}
+Marks: {i["marks"]}
+Grade: {i["grade"]}
 """)
         else:
             print("Student data doesn't exist")        
@@ -45,4 +45,4 @@ Grade: {i[grade]}
         "marks": marks,
         "grade": grade
     }
-    students.append(students)
+    students.append(student)
